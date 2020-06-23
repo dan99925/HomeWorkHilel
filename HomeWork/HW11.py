@@ -9,6 +9,7 @@ for i in range(size // 2 + 1):
     print()
 print()
 
+size = int(input("number"))
 for i in range(size // 2 + 2):
     for j in range(size):
         if i < size // 2 + 1 and size // 2 - i <= j <= i + size // 2:
@@ -19,6 +20,7 @@ for i in range(size // 2 + 2):
 
 print()
 
+size = int(input("number"))
 for i in range(size):
     for j in range(size):
         if i < size // 2 + 1 and size // 2 - i <= j <= i + size // 2:
@@ -31,6 +33,7 @@ for i in range(size):
 
 print()
 
+size = int(input("number"))
 for i in range(size):
     for j in range(size):
         if i < size // 2 + 1 and size // 2 - i <= j <= i + size // 2:
