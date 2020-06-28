@@ -12,7 +12,7 @@ print()
 size = int(input("number"))
 for i in range(size):
     for j in range(size * 2):
-        if i < size and size - i <= j <= i + size:
+        if i < size and size - i - 1 <= j <= i + size - 1:
             print('* ', end ='')
         else:
             print('  ', end='')
