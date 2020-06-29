@@ -21,11 +21,11 @@ for i in range(size):
 print()
 
 size = int(input("number"))
-for i in range(size):
-    for j in range(size):
-        if i < size // 2 + 1 and size // 2 - i <= j <= i + size // 2:
+for i in range(size * 2 - 1):
+    for j in range(size * 2 - 1):
+        if i < size and size - i <= j + 1 <= i + size:
             print('* ', end='')
-        elif i > size // 2 and (j == size - i - 1 + size // 2 or j == size // 2 - (size - i -1)):
+        elif i > size // 2 and (j == size * 2 - i - 3 + size or j - 1 == size - (size * 2 - i)):
             print('* ', end ='')
         else:
             print('  ', end='')
@@ -34,11 +34,11 @@ for i in range(size):
 print()
 
 size = int(input("number"))
-for i in range(size):
-    for j in range(size):
-        if i < size // 2 + 1 and size // 2 - i <= j <= i + size // 2:
+for i in range(size * 2 - 1):
+    for j in range(size * 2 - 1):
+        if i < size and size - i <= j + 1 <= i + size:
             print('* ', end='')
-        elif i > size // 2 and (j == size - i - 1 + size // 2 or j == size // 2 - (size - i -1)) or j == size // 2:
+        elif i > size // 2 and (j == size * 2 - i - 3 + size or j - 1 == size - (size * 2 - i)) or j == size - 1:
             print('* ', end ='')
         else:
             print('  ', end='')
