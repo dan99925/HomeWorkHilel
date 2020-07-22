@@ -4,5 +4,4 @@ for i in range(len(lst) // 2):
     a = lst[i]
     lst[i] = lst[len(lst) - i - 1]
     lst[len(lst) - i - 1] = a
-    lst = list(lst)
 print(lst)
